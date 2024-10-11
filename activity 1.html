@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>activity 1</title>
+</head>
+<body>
+    <h3>JSON in js</h3>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <script>
+        var obj={name:"samira",age:"20"}
+        //sending data
+        var JSONObj=JSON.stringify(obj);
+        //receving data
+        var recObj=JSON.parse(JSONObj);
+        document.getElementById("p1").innerHTML=recObj.name;
+        document.getElementById("p2").innerHTML=recObj.age;
+
+    </script>
+</body>
+</html>
